@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1.0">
+        <title>Indian Monuments Quiz App</title>
+        <link rel="stylesheet" href="quiz-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container active" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Sign Up</h1>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button id="signUpToSignIn">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Sign In</h1>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button id="signInButton">Sign In</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-right">
+                        <h1>Bonjour!</h1>
+                        <p>Please enter your Email and Password to embark on a knowledgable journey!</p>
+                    </div>
+                    <div class="toggle-panel toggle-left">
+                        <h1>Hey there!</h1>
+                        <p>Just provide us your Name, Email and Password, then you are good to go!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="start_btn"><button>Begin Quiz</button></div>
+        <div class="info_box">
+            <div class="info_title">
+                <span>The rules to be followed while taking the quiz:</span>
+            </div>
+            <div class="info_list">
+                <div class="info">1. On the basis of correct answers, you will be awarded marks.</div>
+                <div class="info">2. You will have 15 seconds to answer each question.</div>
+                <div class="info">3. Once time for a question exceeds, you cannot select any option.</div>
+                <div class="info">4. After selecting an answer, you cannot reselect it.</div>
+                <div class="info">5. While you are taking the quiz, you cannot quit.</div>
+                <div class="info">6. There is no negative marking in the quiz.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">End Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+        <div class="quiz_box">
+            <header>
+                <div class="title">Indian Monuments Quiz App</div>
+                <div class="timer">
+                    <div class="time_text">Remaining Time:</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text"></div>
+                <div class="option_list"></div>
+            </section>
+            <footer>
+                <div class="total_que">
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+        <div class="result_box">
+            <div class="icon">
+                <i class="fa fa-crown"></i>
+            </div>
+            <div class="complete_text">You have completed the quiz!</div>
+            <div class="score_text"></div>
+            <div class="buttons">
+                <button class="restart">End Quiz</button>
+            </div>
+        </div>
+        <script src="quiz-questions.js"></script>
+        <script src="quiz-script.js"></script>
+    </body>
+</html>
